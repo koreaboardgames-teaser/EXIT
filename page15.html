@@ -2,50 +2,69 @@
 <html>
 <head>
     <title>해답</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* 전체 폰트 크기 150%로 설정 */
+        /* 기본 폰트 크기 및 마진 제거 */
         body {
-            text-align: center; /* 페이지 전체 텍스트 중앙 정렬 */
-            background-color: #f6ffe8; /* 배경색을 f6ffe8로 설정 */
-            font-size: 150%; /* 전체 폰트 크기 150%로 설정 */
+            text-align: center;
+            background-color: #f6ffe8;
+            font-size: 1em; /* 기본 폰트 크기 */
+            margin: 0;
+            padding: 0;
         }
+
         .back-link {
             display: flex;
             align-items: center;
+            justify-content: center;
             text-decoration: none;
-            font-size: 24px;  /* 폰트 크기 150%로 조정 */
-            color: blue;      /* 파란색 폰트 색상 */
-            font-weight: bold; /* 폰트 굵기 bold */
-            justify-content: center; /* 링크도 중앙 정렬 */
+            font-size: 1.2rem; /* 반응형 폰트 크기 */
+            color: blue;
+            font-weight: bold;
+            margin: 10px 0;
         }
+
         .back-link img {
-            width: 36px; /* 이미지 크기 150%로 조정 */
-            height: 36px;
-            margin-right: 12px;
+            width: 1.5em; /* 이미지 크기 반응형 */
+            height: 1.5em;
+            margin-right: 0.5em;
         }
+
         .content {
-            font-size: 24px; /* 본문 폰트 크기 150%로 조정 */
-            margin-top: 30px; /* 여백도 조금 더 크게 조정 */
+            font-size: 1.1rem; /* 본문 폰트 크기 반응형 */
+            margin: 1em auto;
+            padding: 0 1em;
         }
+
         .symbol-img {
-            width: 75px;  /* 이미지 크기 150%로 조정 */
-            height: 75px; /* 이미지 크기 150%로 조정 */
-            margin-right: 15px;
-            vertical-align: middle; /* 이미지 수평 가운데 정렬 */
-            margin-top: 30px; /* 이미지 위 여백 증가 */
+            width: 5em; /* 이미지 크기 반응형 */
+            height: 5em;
+            margin: 1em 0;
         }
+
+        .hint-image {
+            width: 15em; /* 힌트 이미지 크기 반응형 */
+            height: auto;
+            margin: 30px 0; /* 이미지 위아래 여백 증가 */
+        }
+
         .decrypt-symbol img {
-            width: 75px; /* 해독기 이미지 크기 150%로 조정 */
-            height: 75px;
+            width: 5em; /* 해독기 이미지 크기 반응형 */
+            height: 5em;
             margin-right: 15px;
             vertical-align: middle;
             margin-top: 7px;
             margin-bottom: 7px;
         }
-        .hint-image {
-            width: 300px; /* 힌트 이미지 크기 150%로 조정 */
-            height: auto;
-            margin: 30px 0; /* 이미지 위아래 여백 증가 */
+
+        h2 {
+            font-size: 1.5em; /* 모바일에서 적절한 크기 */
+            margin: 0.5em 0;
+        }
+
+        /* 링크의 밑줄 없애기 */
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -61,13 +80,15 @@
         <p>E, X, I, T 글자 순으로 배치하십시오.</p>
         <p>겹친 이상한 물건의 틈 사이로</p>
         <p>숫자 3개가 보일 것입니다.</p>
-        <p>수수께끼 카드 C의 지시에 따라 숫자 3개를</p>
-        <p>큰 것부터 작은 것까지 순서대로 배열하십시오.</p>
+        <p>수수께끼 카드 C의 지시에 따라</p>
+        <p>숫자 3개를 큰 것부터 작은 것까지</p>
+        <p>순서대로 배열하십시오.</p>
         
         <!-- 힌트 이미지 추가 -->
         <img src="hint2.png" alt="Hint 2" class="hint-image">
 
-        <p>따라서 수수께끼를 푸는 정답 암호는 5 4 2입니다.</p>
+        <p>따라서 수수께끼를 푸는</p>
+        <p>정답 암호는 5 4 2 입니다.</p>
         <p>이 암호를 해독기의</p>
 
         <!-- 해독기와 기호 사이에 symbol13.png 이미지 추가 -->
