@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>해답</title>
+    <style>
+        /* 전체 폰트 크기 150%로 설정 */
+        body {
+            text-align: center; /* 페이지 전체 텍스트 중앙 정렬 */
+            background-color: #f6ffe8; /* 배경색을 f6ffe8로 설정 */
+            font-size: 150%; /* 전체 폰트 크기 150%로 설정 */
+        }
+        .back-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 24px;  /* 폰트 크기 150%로 조정 */
+            color: blue;      /* 파란색 폰트 색상 */
+            font-weight: bold; /* 폰트 굵기 bold */
+            justify-content: center; /* 링크도 중앙 정렬 */
+        }
+        .back-link img {
+            width: 36px; /* 이미지 크기 150%로 조정 */
+            height: 36px;
+            margin-right: 12px;
+        }
+        .content {
+            font-size: 24px; /* 본문 폰트 크기 150%로 조정 */
+            margin-top: 30px; /* 여백도 조금 더 크게 조정 */
+        }
+        .symbol-img {
+            width: 75px;  /* 이미지 크기 150%로 조정 */
+            height: 75px; /* 이미지 크기 150%로 조정 */
+            margin-right: 15px;
+            vertical-align: middle; /* 이미지 수평 가운데 정렬 */
+            margin-top: 7px; /* 이미지 위 여백 증가 */
+            margin-bottom: 7px; /* 이미지 아래 여백 증가 */
+        }
+        .decrypt-symbol img {
+            width: 75px; /* 해독기 부분의 이미지 크기를 150%로 조정 */
+            height: 75px;
+            margin-right: 15px;
+            vertical-align: middle;
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 제목에 사용된 symbol1.png 이미지 -->
+    <img src="symbol1.png" alt="Symbol 1" class="symbol-img">
+    
+    <!-- 해답 제목 -->
+    <h2>해답</h2>
+
+    <div class="content">
+        <p>보관대에 걸린 옷과 모자가 가리고 있는 숫자는 3, 5, 6입니다.</p>
+        <p>수수께끼 카드 E에서 기다리고 있는 세 사람은 한가족으로 추정되며,</p>
+        <p> 왼쪽부터 차례대로 엄마, 아들, 아빠일 것입니다.</p>
+        <p>그러므로 각자에게 필요한 물품을</p>
+        <p>의류 보관대의 번호 순으로 나열하면,</p>
+        <p>수수께끼를 푸는 정답 암호는 6 5 3 입니다.</p>
+        <p>이 암호를 해독기의</p>
+
+        <!-- 해독기와 기호 사이에 symbol1.png 이미지 추가 -->
+        <div class="decrypt-symbol">
+            <img src="symbol1.png" alt="Decrypt Symbol">
+        </div>
+
+        <p>기호 아래에 입력하십시오.</p>
+    </div>
+
+    <!-- 뒤로 가기 링크 -->
+    <a href="index.html" class="back-link">
+        <- 뒤로 가기
+    </a>
+</body>
+</html>

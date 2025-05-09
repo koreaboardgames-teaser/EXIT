@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>해답</title>
+    <style>
+        /* 전체 폰트 크기 150%로 설정 */
+        body {
+            text-align: center; /* 페이지 전체 텍스트 중앙 정렬 */
+            background-color: #f6ffe8; /* 배경색을 f6ffe8로 설정 */
+            font-size: 150%; /* 전체 폰트 크기 150%로 설정 */
+        }
+        .back-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 24px;  /* 폰트 크기 150%로 조정 */
+            color: blue;      /* 파란색 폰트 색상 */
+            font-weight: bold; /* 폰트 굵기 bold */
+            justify-content: center; /* 링크도 중앙 정렬 */
+        }
+        .back-link img {
+            width: 36px; /* 이미지 크기 150%로 조정 */
+            height: 36px;
+            margin-right: 12px;
+        }
+        .content {
+            font-size: 24px; /* 본문 폰트 크기 150%로 조정 */
+            margin-top: 30px; /* 여백도 조금 더 크게 조정 */
+        }
+        .symbol-img {
+            width: 75px;  /* 이미지 크기 150%로 조정 */
+            height: 75px; /* 이미지 크기 150%로 조정 */
+            margin-right: 15px;
+            vertical-align: middle; /* 이미지 수평 가운데 정렬 */
+            margin-top: 30px; /* 이미지 위 여백 증가 */
+        }
+        .hint-img {
+            width: 300px; /* 힌트 이미지 크기 150%로 조정 */
+            height: auto;
+            margin: 15px 0;
+        }
+        .decrypt-symbol img {
+            width: 75px; /* 해독기 부분의 이미지 크기를 150%로 조정 */
+            height: 75px; 
+            margin-right: 15px;
+            vertical-align: middle;
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 제목에 사용된 symbol10.png 이미지 -->
+    <img src="symbol10.png" alt="Symbol 10" class="symbol-img">
+    
+    <!-- 해답 제목 -->
+    <h2>해답</h2>
+
+    <div class="content">
+        <p>수수께끼 카드 6장을 반으로 접어서, α와 β 중에서</p>
+        <p>한 가지만 보이는 반쪽짜리 카드로 만드십시오.</p>
+        <p>책자의 마지막 페이지를 참고하여 파란색, 노란색, 주황색 카드를 배치하십시오.</p>
+        <p>이제 남은 카드 세 장을 이리저리 돌려서</p>
+        <p>맞춰보면 세 자리 숫자를 찾아낼 수 있습니다.</p>
+        <p>그래도 문제가 풀리지 않는다면, 아래의 그림을 참조하십시오.</p>
+
+        <!-- 힌트 이미지 삽입 -->
+        <img src="hint.png" alt="Hint Image" class="hint-img">
+
+        <p>따라서 수수께끼를 푸는 정답 암호는 3 0 2</p>
+        <p>이 암호를 해독기의</p>
+
+        <!-- 해독기와 기호 사이에 symbol10.png 이미지 추가 -->
+        <div class="decrypt-symbol">
+            <img src="symbol10.png" alt="Decrypt Symbol">
+        </div>
+
+        <p>기호 아래에 입력하십시오.</p>
+    </div>
+
+    <!-- 뒤로 가기 링크 -->
+    <a href="index.html" class="back-link">
+        <- 뒤로 가기
+    </a>
+</body>
+</html>
