@@ -2,37 +2,54 @@
 <html>
 <head>
     <title>두 번째 단서</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* 전체 폰트 크기 150%로 설정 */
+        /* 기본 폰트 크기 및 마진 제거 */
         body {
-            text-align: center; /* 페이지 전체 텍스트 중앙 정렬 */
-            background-color: #f6ffe8; /* 배경색을 f6ffe8로 설정 */
-            font-size: 150%; /* 전체 폰트 크기 150%로 설정 */
+            text-align: center;
+            background-color: #f6ffe8;
+            font-size: 1em; /* 기본 폰트 크기 */
+            margin: 0;
+            padding: 0;
         }
+
         .back-link {
             display: flex;
             align-items: center;
+            justify-content: center;
             text-decoration: none;
-            font-size: 24px;  /* 폰트 크기 150%로 조정 */
-            color: blue;      /* 파란색 폰트 색상 */
-            font-weight: bold; /* 폰트 굵기 bold */
-            justify-content: center; /* 링크도 중앙 정렬 */
+            font-size: 1.2rem; /* 반응형 폰트 크기 */
+            color: blue;
+            font-weight: bold;
+            margin: 10px 0;
         }
+
         .back-link img {
-            width: 36px; /* 이미지 크기 150%로 조정 */
-            height: 36px;
-            margin-right: 12px;
+            width: 1.5em; /* 이미지 크기 반응형 */
+            height: 1.5em;
+            margin-right: 0.5em;
         }
+
         .content {
-            font-size: 24px; /* 본문 폰트 크기 150%로 조정 */
-            margin-top: 30px; /* 여백도 조금 더 크게 조정 */
+            font-size: 1.1rem; /* 본문 폰트 크기 반응형 */
+            margin: 1em auto;
+            padding: 0 1em;
         }
+
         .symbol-img {
-            width: 75px;  /* 이미지 크기 150%로 조정 */
-            height: 75px; /* 이미지 크기 150%로 조정 */
-            margin-right: 15px;
-            vertical-align: middle; /* 이미지 수평 가운데 정렬 */
-            margin-top: 30px; /* 이미지 위 여백 증가 */
+            width: 5em; /* 이미지 크기 반응형 */
+            height: 5em;
+            margin: 1em 0;
+        }
+
+        h2 {
+            font-size: 1.5em; /* 모바일에서 적절한 크기 */
+            margin: 0.5em 0;
+        }
+
+        /* 링크의 밑줄 없애기 */
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
